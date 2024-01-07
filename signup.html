@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup System</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style sheet -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container w-75 mt-5 p-5 text-center">
+        <h1 class="text-info mb-4">Smart Login System</h1>
+        <input
+          type="text"
+          class="form-control mb-3"
+          id="userName"
+          placeholder="Enter your name"
+          oninput="validateUserName()"
+        />
+        <input
+          type="email"
+          class="form-control mb-3"
+          id="userEmail"
+          placeholder="Enter your email"
+          oninput="validateUserEmail()"
+        />
+        <input
+          type="password"
+          class="form-control"
+          id="userPass"
+          placeholder="Enter your password"
+          oninput="validateUserPass()"
+        />
+        <button
+          onclick="SignUp()"
+          id="signup"
+          class="signup btn btn-outline-info w-100 mt-5 fs-4"
+        >
+          Sign Up
+        </button>
+        <small id="exist-alert" class="text-danger d-none"
+          >this user has already exist</small
+        >
+        <p class="text-white text-center pt-4">
+          You have an account?
+          <a class="speciallink text-white" href="./index.html">Sign in</a>
+        </p>
+        <button
+          id="SigninfromUp"
+          class="d-none mx-auto btn btn-success w-25 mt-2 fs-4"
+        >
+          <a class="text-white text-decoration-none" href="index.html"
+            >Sign in</a
+          >
+        </button>
+      </div>
+    </main>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

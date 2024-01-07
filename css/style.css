@@ -1,0 +1,40 @@
+/* #24353F
+font-family: 'Titillium Web', sans-serif; */
+body {
+  font-family: "Titillium Web", sans-serif;
+  background-color: #24353f;
+}
+
+main .container {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+
+.form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: #17a2b8;
+  outline: 0;
+  box-shadow: none;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.speciallink:hover {
+  text-decoration: underline;
+}
+
+nav,
+.main-shadow {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
